@@ -1,3 +1,54 @@
 /* CSS - Hard */
 
 /* TODO: Add CSS for the card */
+/* Reset some default margin and padding for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the card container both horizontally and vertically */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Set the background color for the container */
+}
+
+/* Style the card */
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px; /* Create a 3D perspective for card flipping */
+}
+
+/* Style the card faces (front and back) */
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hide the backface of the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* Style the front and back card faces individually */
+.card-front {
+    background-color: #3498db;
+    color: white;
+}
+
+.card-back {
+    background-color: #e74c3c;
+    color: white;
+    transform: rotateY(180deg); /* Flip the card to show the back face */
+}
+
+/* Add some hover effect to make the card flip on hover */
+.card:hover .card {
+    transform: rotateY(180deg);
+}
