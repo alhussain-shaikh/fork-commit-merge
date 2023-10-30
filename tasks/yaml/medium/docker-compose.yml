@@ -3,7 +3,22 @@
 version: '3'
 
 services:
-  # TODO: Define your services here
+  # Define your services here
+  service1:
+    image: your-image-1
+    ports:
+      - "8080:80"
+    networks:
+      - mynetwork
+
+  service2:
+    image: your-image-2
+    ports:
+      - "8081:80"
+    networks:
+      - mynetwork
 
 networks:
-  # TODO: Define your networks here
+  # Define your networks here
+  mynetwork:
+    driver: bridge
