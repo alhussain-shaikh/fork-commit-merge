@@ -129,11 +129,20 @@ body {
 }
 
 .fire-left .main-fire {
-  /* TODO: Add the necessary styles here */
+   background-color: #FF0000; /* Red color, adjust as needed */
+  width: 50px; /* Adjust the width */
+  height: 100px; /* Adjust the height */
+  animation: flame 0.5s infinite alternate; /* Example animation for a flickering flame */
 }
 
 .fire-left .particle-fire {
-  /* TODO: Add the necessary styles here */
+
+  background-color: #FFA500; /* Orange color, adjust as needed */
+  width: 10px; /* Adjust the width */
+  height: 10px; /* Adjust the height */
+  border-radius: 50%; /* Make the particles round */
+  position: absolute; /* Position the particles absolutely within the container */
+  animation: particle 1s infinite linear; /* Example animation for particles */
 }
 
 .fire-bottom .main-fire {
