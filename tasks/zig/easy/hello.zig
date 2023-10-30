@@ -3,5 +3,7 @@
 const std = @import("std");
 
 pub fn main() void {
-    // TODO: Implement the code for printing the string "Hello, world!"
+    // Use the `std.debug.print` function to print "Hello, world!" to the console.
+    const message = "Hello, world!\n";
+    std.debug.print("{s}", .{message});
 }
