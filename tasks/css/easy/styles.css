@@ -1,3 +1,8 @@
 /* CSS - Easy */
 
 /* TODO: Implement red-class */
+/* Define the "red-class" */
+.red {
+    color: red; /* This sets the text color to red */
+}
+
